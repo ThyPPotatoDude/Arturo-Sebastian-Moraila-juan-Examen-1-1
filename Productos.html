@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+               
+                ul.navbar {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex; 
+                }
+                li.nav-item {
+                    margin-right: 10px; 
+                }
+                a.nav-link {
+                    display: block;
+                    padding: 5px 10px;
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: #333;
+                }
+            </style>
+        </head>
+        <body>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-link" href="Inicio.html">Inico</a></li>
+                <li class="nav-item"><a class="nav-link" href="Conocenos.html">Conocenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="Registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+            </ul>
+        </body>
+    
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffffff0;
+        }
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 30px solid #333;
+            border-radius: 10px;
+            background-color: #1394b1;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 1px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 1px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Example</h2>
+        <form action="submit.php" method="post">
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" placeholder="e.g., www.example.com" required>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="e.g., Juan" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="e.g., Pérez" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
